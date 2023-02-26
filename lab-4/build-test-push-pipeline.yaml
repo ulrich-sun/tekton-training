@@ -18,4 +18,3 @@ spec:
         name: push-task
       runAfter:
         - test
-

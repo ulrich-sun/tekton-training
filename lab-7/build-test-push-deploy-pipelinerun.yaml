@@ -86,4 +86,3 @@ spec:
                 - "$(params.manifest-deploy)"
         runAfter:
           - push
-
