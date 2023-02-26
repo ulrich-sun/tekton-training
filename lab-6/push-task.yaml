@@ -18,14 +18,13 @@ spec:
         - sh
         - -c
         - "
-          docker login --username eazytraining --password TOKEN && \
+          docker login --username dirane --password TOKEN && \
           docker load < $(workspaces.dockerImageArtefact.path)/$(params.imageName).tar && \
-          docker tag $(params.imageName) eazytraining/$(params.imageName) && \
-          docker push eazytraining/$(params.imageName)
+          docker tag $(params.imageName) dirane/$(params.imageName) && \
+          docker push dirane/$(params.imageName)
           "
       securityContext:
         privileged: true
       volumeMounts:
         - name: docker-socket
           mountPath: /var/run/docker.sock
-

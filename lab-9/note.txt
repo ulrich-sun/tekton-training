@@ -1,0 +1,5 @@
+# Commandes Lab-9
+
+kubectl apply -f https://storage.googleapis.com/tekton-releases/dashboard/previous/v0.32.0/release.yaml
+kubectl get pods --namespace tekton-pipelines --watch
+kubectl --namespace tekton-pipelines port-forward svc/tekton-dashboard 9097:9097

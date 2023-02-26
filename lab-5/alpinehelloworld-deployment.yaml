@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: alpinehelloworld
-          image: eazytraining/alpinehelloworld
+          image: dirane/alpinehelloworld
           env:
             - name: PORT
               value: "5000"
@@ -38,4 +38,3 @@ spec:
       port: 5000
       targetPort: 5000
       nodePort: 30080
-
