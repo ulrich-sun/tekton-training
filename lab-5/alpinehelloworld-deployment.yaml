@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: alpinehelloworld
-          image: dirane/alpinehelloworld
+          image: eazytraining/alpinehelloworld
           env:
             - name: PORT
               value: "5000"
